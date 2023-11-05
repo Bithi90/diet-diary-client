@@ -21,7 +21,7 @@ const AddFood = () => {
         const formData = new FormData();
         formData.append('Image', data.Image)
         const item = { Name: data.Name, Calories: data.Calories, Day: data.day, Date: data.Date, email: user.email }
-        fetch('http://localhost:5000/addFood', {
+        fetch('https://diet-diary-server.vercel.app/addFood', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

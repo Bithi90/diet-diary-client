@@ -8,7 +8,7 @@ const TodayChart = () => {
     const [food, setFood] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/addFood')
+        fetch('https://diet-diary-server.vercel.app/addFood')
             .then(res => res.json())
             .then(data => setFood(data));
     }, [])
